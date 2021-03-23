@@ -18,6 +18,10 @@
 # 13. || 逻辑与
 
 num1=$1
-if ((!"$num1" > 100)); then
+if (($num1 > 100)); then
   echo "123"
+fi
+
+if (($num1 << 8 > 10)); then
+  echo "321"
 fi

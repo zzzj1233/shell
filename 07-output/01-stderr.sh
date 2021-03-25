@@ -4,8 +4,8 @@
 # 4. yyy 2> xxx 重定向stderr,如果yyy命令参数产生一个错误的结果,那么输出到xxx
 
 # 1. ok 可以将错误内容输出到error.log
-ls -al --color=auto notExsitsFile 2> error.log
-
+ls -al --color=auto notExsit sFile 2> error.log
+ 
 # 2. 失败 由于ls -al不会产生stderr输出,任会将stdout输出到屏幕,并且清空error.log
 ls -al --color=auto test.sh 2> error.log
 
